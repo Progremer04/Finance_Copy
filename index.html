@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+    <nav class="navs">
+        <div class="navleft">
+            <div class="logo">
+                <img src="/image/logo-removebg-preview.png" alt="">
+            </div>
+            <div id="text_logo">
+                <h1>Finance</h1>
+            </div>
+        </div>
+        <div class="grid2row">
+            <div class="grid1">
+                <div class="flefbox3">
+                    <div class="inputshearch">
+                        <button onclick="clearInput()"><img src="/image/search.svg" alt="shearchicon"></button>
+                        <input type="search" id="myInput" placeholder="Search here..">
+                    </div>
+                    <div class="icon">
+                        <img src="/image/notification32px.png" alt="notificationicon" id="notification">
+                        <img src="/image/chat-comment-oval-speech-bubble-with-text-lines.png" alt="contacttexticon" id="contacttext">
+                        <div class="hollderimg">
+                            <div class="imagecover">
+                                <div class="coverimage">
+                                    <div class="contact">
+                                        <img src="/image/profile.jpg" alt="profileicon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left_body">
+            <div class="subdown1">
+                <div>
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Dashoard <span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Classic</li>
+                        </a>
+                        <a href="#">
+                            <li>Minimal</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div>
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Pages <span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Login</li>
+                        </a>
+                        <a href="#">
+                            <li>Register</li>
+                        </a>
+                        <a href="#">
+                            <li>Forgot Password</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div>
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Application<span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Mail Box</li>
+                        </a>
+                        <a href="#">
+                            <li>Chat</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQ</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div class="buttom">
+                    <button>
+                    <img src="#" alt="">
+                    <h2>UI Component <span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Element</li>
+                        </a>
+                        <a href="#">
+                            <li>Copontsr</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div>
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Widgets <span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Chart Boxes 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Profile Box</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div>
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Forms<span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>Element</li>
+                        </a>
+                        <a href="#">
+                            <li>Widgets</li>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="subdown1">
+                <div class="buttom">
+                    <button class="buttom">
+                    <img src="#" alt="">
+                    <h2>Charts <span>▼</span></h2>
+                </button>
+                </div>
+                <div class="info">
+                    <ul>
+                        <a href="#">
+                            <li>ChatJS</li>
+                        </a>
+                        <a href="#">
+                            <li>Apex Charts</li>
+                        </a>
+                        <a href="#">
+                            <li>chart sparkline</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="right_body">
+            <!-- first2colomn -->
+            <div class="first2colomn">
+                <div class="first_div">
+                    <div class="textposition">
+                        <h3>Total Income</h3>
+                        <div class="textwithjava1">
+                            <h1 id="n1">$ 579,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+                <div class="second_div">
+                    <div class="textposition">
+                        <h3>Total Expences</h3>
+                        <div class="textwithjava2">
+                            <h1 id="n2">$ 79,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secend2colomn">
+                <div class="third_div">
+                    <div class="textposition">
+                        <h3>Cash on Hand</h3>
+                        <div class="textwithjava3">
+                            <h1 id="n3">$ 92,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+                <div class="fourth_div">
+                    <div class="textposition">
+                        <h3>Net Profit Margin</h3>
+                        <div class="textwithjava4">
+                            <h1 id="n4">$ 179,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end2colomn">
+                <!--  chmp desig -->
+                <div class="fifth_div">
+                    <img src="/image/Untitled.png" alt="">
+                </div>
+                <!-- Two Circle -->
+                <div class="sixth_div">
+                    <div class="leftcircle">
+                        <h3 class="text2">$ of Income Budget</h3>
+                        <div class="circle1">
+
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div class="text">
+                                            <div id="number">65%
+                                                <h3 id="textc1">Budget</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                   <lineargradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#6dd4b1" />
+                                    <stop offset="100%" stop-color="#4d73eb" />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                                <div class="textskils">
+                                    <div class="testskills_left">
+                                        <div class="imgcircle"><img src="/logo/circle-solid.svg" alt="" width="20px"></div>
+                                        <h2 class="prix">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth">
+                                        <div class="imgcircle"><img src="/logo/circle-solid-green.svg" alt="" width="20px"></div>
+                                        <h2 class="prix">$131,430</h2>
+
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="links"><a href="#">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rithghcircle">
+                        <h3 class="text2">$ of Income Budget</h3>
+                        <div class="circle2">
+
+
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div class="text">
+                                            <div id="number1">48%
+                                                <h3 id="textc2">Profit</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                   <lineargradient id="GradientColor1">
+                                      <stop offset="0%" stop-color="#6dd4b1" />
+                                      <stop offset="100%" stop-color="#4d73eb" />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                                <div class="textskils">
+                                    <div class="testskills_left">
+                                        <div class="imgcircle"><img src="/logo/circle-solid-green.svg" alt="" width="20px"></div>
+                                        <h2 class="prix">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth">
+                                        <div class="imgcircle"><img src="/logo/circle-solid.svg" alt="" width="20px"></div>
+                                        <h2 class="prix">$131,430</h2>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="links"><a href="#">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+
+<script>
+    let Number = document.getElementById("number");
+    let j = 0;
+    setInterval(() => {
+        if (j == 65)
+            clearInterval();
+        else {
+            ++j;
+            Number.innerHTML = j + "%";
+        }
+    }, 30);
+    let Number1 = document.getElementById("number1");
+    let i = 0;
+    setInterval(() => {
+        if (i == 48)
+            clearInterval();
+        else {
+            ++i;
+            Number1.innerHTML = i + "%";
+        }
+    }, 30);
+    let N1 = document.getElementById("n1");
+    let q = 0;
+    setInterval(() => {
+        if (q == 579.000)
+            clearInterval();
+        else {
+            q = q + 1;
+            N1.innerHTML = "$" + q;
+        }
+    }, 30);
+    let N2 = document.getElementById("n2");
+    let q1 = 0;
+    setInterval(() => {
+        if (q1 == 79.000)
+            clearInterval();
+        else {
+            q1 = q1 + 1;
+            N2.innerHTML = "$" + (q1 * 1.000);
+        }
+    }, 30);
+    let N3 = document.getElementById("n3");
+    let q3 = 0;
+    setInterval(() => {
+        if (q3 == 92.000)
+            clearInterval();
+        else {
+            q3 += 1;
+            N3.innerHTML = "$" + q3;
+        }
+    }, 30);
+    let N4 = document.getElementById("n4");
+    let q4 = 0;
+    setInterval(() => {
+        if (q4 == 179.000)
+            clearInterval();
+        else {
+            q4 += 1;
+            N4.innerHTML = "$" + q4;
+        }
+    }, 30);
+
+    function clearInput() {
+        document.getElementById("myInput").value = "";
+    }
+</script>
+
+
+
+<!-- 
+
+        color site:
+
+        /* CSV */
+7dc6d4,f4fafa,9e72cc,4473e3,abbfd1,847774,ccd8de,cab3d9,eac8b9
+
+/* Array */
+["7dc6d4","f4fafa","9e72cc","4473e3","abbfd1","847774","ccd8de","cab3d9","eac8b9"]
+
+
+     -->

@@ -1,0 +1,506 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* 
+pour calculat prosontase use cette fourmule
+472-472*(your prosontage/100)
+
+write it reusultate in 
+ stroke-dashoffset: 0;
+ in :
+ @keyframes anim {
+    
+*/
+    /* Nav */
+    
+    .navs {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        background-color: rgba(171, 191, 209, 1);
+        width: 100%;
+        height: 190px;
+    }
+    
+    .navleft {
+        display: flex;
+        width: 300px;
+        height: 150px;
+        background-color: #f4fafa;
+        margin: 0;
+        border-radius: 10%;
+        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
+        border-radius: 7px;
+        padding: 33px 30px;
+        flex-direction: row;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    
+    .navleft h1 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #9e72cc;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    
+    .navleft img {
+        width: auto;
+        height: auto;
+        margin-top: -20px;
+    }
+    
+    .coverimage {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: -25%;
+    }
+    
+    .contact {
+        position: absolute;
+        inset: 30px;
+        border: 2px solid #9e72cc;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .contact img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .grid2row {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        width: 85%;
+        height: 85%;
+        margin-top: 1%;
+    }
+    
+    .grid2row .flefbox3 {
+        display: flex;
+    }
+    
+    .flefbox3 {
+        margin-top: 5%;
+    }
+    
+    .inputshearch {
+        display: flex;
+    }
+    
+    .inputshearch input {
+        border: none;
+        width: 450px;
+        height: 50px;
+    }
+    
+    .inputshearch button,
+    .inputshearch img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .inputshearch button {
+        border: none;
+    }
+    
+    .inputshearch img,
+    .inputshearch button,
+    .inputshearch input {
+        background: #f7faff;
+    }
+    
+    .inputshearch {
+        color: #000;
+        font-size: 17px;
+        height: 60px;
+        width: 100%;
+        padding-left: 82px;
+        border: 0;
+        padding-right: 15px;
+        border-bottom: 1px solid #f4f7fc;
+        background: #f7faff;
+        border-radius: 30px;
+    }
+    
+    .inputshearch input {
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+    }
+    
+    .icon {
+        display: flex;
+        margin-left: 40px;
+    }
+    
+    .icon #contacttext,
+    #notification {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .icon #notification,
+    #contacttext,
+    .imagecover {
+        flex-direction: row;
+        margin-left: 20px;
+    }
+    
+    .grid2row {
+        background: #fff;
+        border-radius: 10%;
+        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
+        border-radius: 7px;
+    }
+    /* Body */
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        background-color: #fff;
+        margin-top: 15px;
+    }
+    
+    .left_body {
+        width: 300px;
+        height: auto;
+        background-color: rgba(171, 191, 209, 1);
+    }
+    
+    .rigth_body {
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    
+    .first2colomn,
+    .secend2colomn,
+    .end2colomn {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        padding-inline: 3px;
+    }
+    
+    .first_div,
+    .second_div,
+    .third_div,
+    .fourth_div,
+    .fifth_div,
+    .sixth_div {
+        background-color: rgba(171, 191, 209, 1);
+        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
+        border-radius: 7px;
+        width: 700px;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+    
+    .first_div {
+        background-color: #3b76ee;
+    }
+    
+    .second_div {
+        background-color: #62c7ff;
+    }
+    
+    .third_div {
+        background-color: #a66dd4;
+    }
+    
+    .fourth_div {
+        background-color: #6cd4b1;
+    }
+    
+    .second_div,
+    .fourth_div,
+    .sixth_div {
+        margin-left: 30px;
+    }
+    
+    .textposition {
+        position: relative;
+        margin-left: 30px;
+        margin-top: 10px;
+        color: #f8f9fa;
+    }
+    
+    body {
+        background-color: rgba(171, 191, 209, 1);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sixth_div {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        height: 120vh;
+    }
+    /*  circl1  */
+    
+    .circle1 {
+        background: #e3edf7;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        border-radius: 10%;
+        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
+        border-radius: 7px;
+    }
+    
+    .skill {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        /* background: cornflowerblue; */
+    }
+    
+    .outer {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        padding: 20px;
+        box-shadow: -6px -6px -10px 1px rgba(0, 0, 0, 0.15), 6px 6px 10px 1px rgba(255, 255, 255, 0.7);
+    }
+    
+    .inner {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    }
+    
+    #number {
+        font-weight: 600px;
+        color: #524f5c;
+        font-weight: bolder;
+        font-size: x-large;
+        padding-left: 5%;
+    }
+    
+    circle {
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: anim 2s linear forwards;
+    }
+    
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    @keyframes anim {
+        100% {
+            stroke-dashoffset: 162;
+        }
+    }
+    /* circle 2 */
+    
+    .circle2 {
+        background: #e3edf7;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .skill {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        /* background: cornflowerblue; */
+    }
+    
+    .outer {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        padding: 20px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 6px 6px 10px -1px rgba(255, 255, 255, 0.7);
+    }
+    
+    .inner {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    }
+    
+    #number1 {
+        font-weight: 600px;
+        color: #524f5c;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    
+    .text #number,
+    .text #number1 {
+        margin-left: 15%;
+    }
+    
+    .text #textc1,
+    .text #textc2 {
+        margin-left: -15%;
+    }
+    
+    circle {
+        fill: none;
+        stroke: url(#GradientColor1);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: anim1 2s linear forwards;
+    }
+    
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    @keyframes anim1 {
+        100% {
+            stroke-dashoffset: 48%;
+        }
+    }
+    
+    .leftcircle,
+    .rithghcircle {
+        background: #e3edf7;
+    }
+    
+    .textskils {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .testskills_left,
+    .textskils_rigth {
+        padding-right: 9px;
+        padding-left: -2px;
+    }
+    
+    .testskills_left,
+    .textskils_rigth {
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    .testskills_left h2,
+    .textskils_rigth h2 {
+        color: darkcyan;
+    }
+    
+    .textskils_rigth img {
+        color: #bdbcee;
+    }
+    
+    .line {
+        display: block;
+        width: 200px;
+        border: 1px solid #ccc;
+    }
+    
+    .links a {
+        text-decoration: none;
+        margin-left: 10%;
+    }
+    
+    .fifth_div {
+        width: auto;
+    }
+    
+    .leftcircle,
+    .rithghcircle {
+        border-radius: 10%;
+        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
+        border-radius: 7px;
+        border: 1px solid #ccc;
+    }
+    /*  subbar  i got probleme in showing and hidden info of list*/
+    /*
+    
+    .left_body button:hover {
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1%;
+    }
+    
+    .info li {
+        list-style: none;
+    }
+    
+    .info li {
+        margin-left: 4%;
+    }
+    
+    .info {
+        padding-bottom: 2%;
+        margin-left: 12%;
+    }
+    
+    .info {
+        display: none;
+    }
+    
+    .buttom:hover .info {
+        display: block;
+    }
+    
+    .subdown1 button {
+        border: none;
+        width: auto;
+        height: auto;
+        border-radius: 0%;
+    }
+    */
+    
+    .left_body button {
+        border: none;
+    }
+    
+    .left_body button {
+        background-color: rgba(171, 191, 209, 1);
+        color: #676b84;
+    }
+    
+    .left_body .info a {
+        color: #676b84;
+        text-decoration: none;
+    }
+    
+    .info li {
+        margin-left: 50px;
+        list-style: none;
+    }
+    
+    .subdown1 button:hover {
+        color: #000;
+    }
+    
+    .subdown1 button {
+        margin-left: 10px;
+    }
