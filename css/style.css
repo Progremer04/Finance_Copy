@@ -294,7 +294,7 @@ write it reusultate in
         padding-left: 5%;
     }
     
-    circle {
+    #circle1 {
         fill: none;
         stroke: url(#GradientColor);
         stroke-width: 20px;
@@ -311,7 +311,7 @@ write it reusultate in
     
     @keyframes anim {
         100% {
-            stroke-dashoffset: 162;
+            stroke-dashoffset: 155;
         }
     }
     /* circle 2 */
@@ -324,14 +324,14 @@ write it reusultate in
         justify-content: center;
     }
     
-    .skill {
+    .skill1 {
         width: 160px;
         height: 160px;
         position: relative;
         /* background: cornflowerblue; */
     }
     
-    .outer {
+    .outer1 {
         height: 160px;
         width: 160px;
         border-radius: 50%;
@@ -339,7 +339,7 @@ write it reusultate in
         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 6px 6px 10px -1px rgba(255, 255, 255, 0.7);
     }
     
-    .inner {
+    .inner1 {
         height: 120px;
         width: 120px;
         border-radius: 50%;
@@ -366,7 +366,7 @@ write it reusultate in
         margin-left: -15%;
     }
     
-    circle {
+    #circle2 {
         fill: none;
         stroke: url(#GradientColor1);
         stroke-width: 20px;
@@ -383,7 +383,7 @@ write it reusultate in
     
     @keyframes anim1 {
         100% {
-            stroke-dashoffset: 48%;
+            stroke-dashoffset: 245.44;
         }
     }
     
@@ -503,4 +503,33 @@ write it reusultate in
     
     .subdown1 button {
         margin-left: 10px;
+    }
+    
+    .circle1,
+    .circle2 {
+        width: auto;
+        height: auto;
+    }
+    
+    .sixth_div {
+        width: 800px;
+        height: 500px;
+    }
+    /*  here start charts drowing */
+    
+    .charts {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .fifth_div {
+        background: top;
+        height: auto;
+    }
+    
+    .chart {
+        color: #3b76ee;
     }
