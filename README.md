@@ -8,4 +8,4 @@ My Group is : { 3 }
 
 Click here to see resultat:
 
-https://progremer04.github.io/Finance_Copy_Alliche_Amine_Mohamed/
+https://progremer04.github.io/Finance_Copy_Alliche_Amine/
