@@ -1,710 +1,331 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    /* 
-pour calculat prosontase use cette fourmule
-472-472*(your prosontage/100)
+<!DOCTYPE html>
+<html lang="en">
 
-write it reusultate in 
- stroke-dashoffset: 0;
- in :
- @keyframes anim {
-    
-*/
-    /* Nav */
-    
-    .navs {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        background-color: rgba(171, 191, 209, 1);
-        width: 100%;
-        height: 190px;
-    }
-    
-    .navleft {
-        display: flex;
-        width: 300px;
-        height: 150px;
-        background-color: #f4fafa;
-        margin: 0;
-        border-radius: 10%;
-        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
-        border-radius: 7px;
-        padding: 33px 30px;
-        flex-direction: row;
-        margin-top: 2%;
-        margin-left: 5%;
-    }
-    
-    .navleft h1 {
-        margin-top: 20px;
-        margin-left: 20px;
-        color: #9e72cc;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: xx-large;
-        font-weight: bolder;
-    }
-    
-    .navleft img {
-        width: auto;
-        height: auto;
-        margin-top: -20px;
-    }
-    
-    .coverimage {
-        position: relative;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-top: -25%;
-    }
-    
-    .contact {
-        position: absolute;
-        inset: 30px;
-        border: 2px solid #9e72cc;
-        z-index: 3;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    
-    .contact img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .grid2row {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        width: 85%;
-        height: 85%;
-        margin-top: 1%;
-    }
-    
-    .grid2row .flefbox3 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .flefbox3 {
-        margin-top: 5%;
-    }
-    
-    .inputshearch {
-        display: flex;
-    }
-    
-    .inputshearch input {
-        border: none;
-        width: 450px;
-        height: 50px;
-    }
-    
-    .inputshearch button,
-    .inputshearch img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .inputshearch button {
-        border: none;
-    }
-    
-    .inputshearch img,
-    .inputshearch button,
-    .inputshearch input {
-        background: #f7faff;
-    }
-    
-    .inputshearch {
-        color: #000;
-        font-size: 17px;
-        height: 60px;
-        width: 100%;
-        padding-left: 82px;
-        border: 0;
-        padding-right: 15px;
-        border-bottom: 1px solid #f4f7fc;
-        background: #f7faff;
-        border-radius: 30px;
-    }
-    
-    .inputshearch input {
-        width: 100%;
-        height: 60px;
-        border-radius: 30px;
-    }
-    
-    .icon {
-        display: flex;
-        margin-left: 40px;
-    }
-    
-    .icon #contacttext,
-    #notification {
-        width: 64px;
-        height: 64px;
-    }
-    
-    .icon #notification,
-    #contacttext,
-    .imagecover {
-        flex-direction: row;
-        margin-left: 20px;
-    }
-    
-    .grid2row {
-        background: #fff;
-        border-radius: 10%;
-        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
-        border-radius: 7px;
-    }
-    /* Body */
-    
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        background-color: #fff;
-        margin-top: 15px;
-    }
-    
-    .left_body {
-        width: 300px;
-        height: auto;
-        background-color: rgba(171, 191, 209, 1);
-    }
-    
-    .rigth_body {
-        width: auto;
-        height: auto;
-        display: flex;
-    }
-    
-    .first2colomn,
-    .secend2colomn,
-    .end2colomn {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 20px;
-        padding-inline: 3px;
-    }
-    
-    .first_div,
-    .second_div,
-    .third_div,
-    .fourth_div,
-    .fifth_div,
-    .sixth_div {
-        background-color: rgba(171, 191, 209, 1);
-        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
-        border-radius: 7px;
-        width: 700px;
-        height: 100px;
-        padding-bottom: 20px;
-    }
-    
-    .first_div {
-        background-color: #3b76ee;
-    }
-    
-    .second_div {
-        background-color: #62c7ff;
-    }
-    
-    .third_div {
-        background-color: #a66dd4;
-    }
-    
-    .fourth_div {
-        background-color: #6cd4b1;
-    }
-    
-    .second_div,
-    .fourth_div,
-    .sixth_div {
-        margin-left: 30px;
-    }
-    
-    .textposition {
-        position: relative;
-        margin-left: 30px;
-        margin-top: 10px;
-        color: #f8f9fa;
-    }
-    
-    body {
-        background-color: rgba(171, 191, 209, 1);
-        width: 100%;
-        height: 100%;
-    }
-    
-    .sixth_div {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        height: 120vh;
-    }
-    /*  circl1  */
-    
-    .circle1 {
-        background: #e3edf7;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        border-radius: 10%;
-        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
-        border-radius: 7px;
-    }
-    
-    .skill {
-        width: 160px;
-        height: 160px;
-        position: relative;
-        /* background: cornflowerblue; */
-    }
-    
-    .outer {
-        height: 160px;
-        width: 160px;
-        border-radius: 50%;
-        padding: 20px;
-        box-shadow: -6px -6px -10px 1px rgba(0, 0, 0, 0.15), 6px 6px 10px 1px rgba(255, 255, 255, 0.7);
-    }
-    
-    .inner {
-        height: 120px;
-        width: 120px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-    }
-    
-    #number {
-        font-weight: 600px;
-        color: #524f5c;
-        font-weight: bolder;
-        font-size: x-large;
-        padding-left: 5%;
-    }
-    
-    #circle1 {
-        fill: none;
-        stroke: url(#GradientColor);
-        stroke-width: 20px;
-        stroke-dasharray: 472;
-        stroke-dashoffset: 472;
-        animation: anim 2s linear forwards;
-    }
-    
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    @keyframes anim {
-        100% {
-            stroke-dashoffset: 155;
-        }
-    }
-    /* circle 2 */
-    
-    .circle2 {
-        background: #e3edf7;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .skill1 {
-        width: 160px;
-        height: 160px;
-        position: relative;
-        /* background: cornflowerblue; */
-    }
-    
-    .outer1 {
-        height: 160px;
-        width: 160px;
-        border-radius: 50%;
-        padding: 20px;
-        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 6px 6px 10px -1px rgba(255, 255, 255, 0.7);
-    }
-    
-    .inner1 {
-        height: 120px;
-        width: 120px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-    }
-    
-    #number1 {
-        font-weight: 600px;
-        color: #524f5c;
-        font-weight: bolder;
-        font-size: x-large;
-    }
-    
-    .text #number,
-    .text #number1 {
-        margin-left: 15%;
-    }
-    
-    .text #textc1,
-    .text #textc2 {
-        margin-left: -15%;
-    }
-    
-    #circle2 {
-        fill: none;
-        stroke: url(#GradientColor1);
-        stroke-width: 20px;
-        stroke-dasharray: 472;
-        stroke-dashoffset: 472;
-        animation: anim1 2s linear forwards;
-    }
-    
-    svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    @keyframes anim1 {
-        100% {
-            stroke-dashoffset: 245.44;
-        }
-    }
-    
-    .leftcircle,
-    .rithghcircle {
-        background: #e3edf7;
-    }
-    
-    .textskils {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .testskills_left,
-    .textskils_rigth {
-        padding-right: 9px;
-        padding-left: -2px;
-    }
-    
-    .testskills_left,
-    .textskils_rigth {
-        list-style: none;
-        display: inline-flex;
-    }
-    
-    .testskills_left h2,
-    .textskils_rigth h2 {
-        color: darkcyan;
-    }
-    
-    .textskils_rigth img {
-        color: #bdbcee;
-    }
-    
-    .line {
-        display: block;
-        width: 200px;
-        border: 1px solid #ccc;
-    }
-    
-    .links a {
-        text-decoration: none;
-        margin-left: 10%;
-    }
-    
-    .fifth_div {
-        width: auto;
-    }
-    
-    .leftcircle,
-    .rithghcircle {
-        border-radius: 10%;
-        box-shadow: 6px 6px 10px -1px rgba(123, 255, 255, 0.50);
-        border-radius: 7px;
-        border: 1px solid #ccc;
-    }
-    /*  subbar  i got probleme in showing and hidden info of list*/
-    /*
-    
-    .left_body button:hover {
-        display: block;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 1%;
-    }
-    
-    .info li {
-        list-style: none;
-    }
-    
-    .info li {
-        margin-left: 4%;
-    }
-    
-    .info {
-        padding-bottom: 2%;
-        margin-left: 12%;
-    }
-    
-    .info {
-        display: none;
-    }
-    
-    .buttom:hover .info {
-        display: block;
-    }
-    
-    .subdown1 button {
-        border: none;
-        width: auto;
-        height: auto;
-        border-radius: 0%;
-    }
-    */
-    
-    .left_body button {
-        border: none;
-    }
-    
-    .left_body button {
-        background-color: rgba(171, 191, 209, 1);
-        color: #676b84;
-    }
-    
-    .left_body .info a {
-        color: #676b84;
-        text-decoration: none;
-    }
-    
-    .info li {
-        margin-left: 50px;
-        list-style: none;
-    }
-    
-    .subdown1 button:hover {
-        color: #000;
-    }
-    
-    .subdown1 button {
-        margin-left: 10px;
-    }
-    
-    .circle1,
-    .circle2 {
-        width: auto;
-        height: auto;
-    }
-    
-    .sixth_div {
-        width: 800px;
-        height: 500px;
-    }
-    /*  here start charts drowing */
-    
-    .charts {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 20px;
-        width: 100%;
-        padding: 20px;
-    }
-    
-    .fifth_div {
-        background: top;
-        height: auto;
-    }
-    
-    .chart {
-        color: #3b76ee;
-    }
-    /* Media query for smaller screens */
-    
-    @media screen and (max-width: 700px) {
-        .navs {
-            grid-template-columns: repeat(1, 2fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
-    }
-    /* Media query for even smaller screens */
-    
-    @media screen and (max-width: 480px) {
-        .container {
-            grid-template-columns: 1fr;
-        }
-    }
-    /* Begin SubDown Editor */
-    
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        user-select: none;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .btn.click {
-        left: 260px;
-    }
-    
-    .btn span {
-        color: white;
-        font-size: 28px;
-        line-height: 45px;
-    }
-    
-    .btn.click span:before {
-        content: '\f00d';
-    }
-    
-    .sidebar {
-        position: absolute;
-        width: 250px;
-        height: 100%;
-        left: 0;
-        /* background: #1b1b1b; */
-        transition: left 0.4s ease;
-    }
-    
-    .sidebar.show {
-        left: 0px;
-    }
-    
-    .sidebar .text,
-    .sidebar i {
-        color: white;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 65px;
-        text-align: center;
-        /* background: #1e1e1e; */
-        letter-spacing: 1px;
-    }
-    
-    .nays ul {
-        /* background: #1b1b1b; */
-        height: 100%;
-        width: 100%;
-        list-style: none;
-    }
-    
-    .nays ul li {
-        line-height: 60px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .nays ul li:last-child {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    .nays ul li a {
-        position: relative;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        padding-left: 40px;
-        font-weight: 500;
-        display: block;
-        width: 100%;
-        border-left: 3px solid transparent;
-    }
-    
-    .nays ul li.active a {
-        color: cyan;
-        /* background: #1e1e1e; */
-        border-left-color: cyan;
-    }
-    
-    .nays ul li a:hover {
-        background: #1e1e1e;
-    }
-    
-    .nays ul ul {
-        position: static;
-        display: none;
-    }
-    
-    .nays ul .feat-show.show {
-        display: block;
-    }
-    
-    .nays ul .serv-show.show1 {
-        display: block;
-    }
-    
-    .nays ul .show01.show1 {
-        display: block;
-    }
-    
-    .nays ul .show2.show1 {
-        display: block;
-    }
-    
-    .nays ul .show3.show1 {
-        display: block;
-    }
-    
-    .nays ul .show4.show1 {
-        display: block;
-    }
-    
-    .nays ul ul li {
-        line-height: 42px;
-        border-top: none;
-    }
-    
-    .nays ul ul li a {
-        font-size: 17px;
-        color: #e6e6e6;
-        padding-left: 80px;
-    }
-    
-    .nays ul li.active ul li a {
-        color: #e6e6e6;
-        /* background: #1b1b1b; */
-        border-left-color: transparent;
-    }
-    
-    .nays ul ul li a:hover {
-        color: cyan!important;
-        background: #1e1e1e!important;
-    }
-    
-    .nays ul li a span {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 22px;
-        transition: transform 0.4s;
-    }
-    
-    .nays ul li a span.rotate {
-        transform: translateY(-50%) rotate(-180deg);
-    }
-    
-    .sidebar i:hover {
-        cursor: pointer;
-    }
-    
-    .sidebar {
-        margin-top: 0%;
-    }
-    /*  end editor */
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance_Copy_Alliche_Amine</title>
+    <link rel="icon" href="image/profile.jpg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navs">
+        <div class="navleft">
+            <div class="logo">
+                <img src="image/logo-removebg-preview.png" alt="">
+            </div>
+            <div id="text_logo">
+                <h1>Finance</h1>
+            </div>
+        </div>
+        <div class="grid2row">
+            <div class="grid1">
+                <div class="flefbox3">
+                    <div class="inputshearch">
+                        <button onclick="clearInput()"><img src="image/search.svg" alt="shearchicon"></button>
+                        <input type="search" id="myInput" placeholder="Search here..">
+                    </div>
+                    <div class="icon">
+                        <img src="image/notification32px.png" alt="notificationicon" id="notification">
+                        <img src="image/chat-comment-oval-speech-bubble-with-text-lines.png" alt="contacttexticon" id="contacttext">
+                        <div class="hollderimg">
+                            <div class="imagecover">
+                                <div class="coverimage">
+                                    <div class="contact">
+                                        <img src="image/profile.jpg" alt="profileicon">
+                                        <img src="image/profile.jpg" alt="profileicon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left_body">
+            <div class="nays">
+                <div class="sidebar">
+
+                    <ul>
+
+                        <li>
+                            <i class="feat-btn">Dashoard
+               <span class="fas fa-caret-down first"></span>
+               </i>
+                            <ul class="feat-show">
+                                <li><a href="#">Classic</a></li>
+                                <li><a href="#">Minimal</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="serv-btn">Pages
+                            <span class="fas fa-caret-down second"></span>
+                            </i>
+                            <ul class="serv-show">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Forget Password</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="btn4">Application
+                            <span class="fas fa-caret-down second"></span>
+                            </i>
+                            <ul class="show4">
+                                <li><a href="#">Mail Box</a></li>
+                                <li><a href="#">Chat</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="btn1">UI Component
+                            <span class="fas fa-caret-down second"></span>
+                            </i>
+                            <ul class="show01">
+                                <li><a href="#">Element</a></li>
+                                <li><a href="#">Copontsr</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="btn2">Forms
+                            <span class="fas fa-caret-down second"></span>
+                            </i>
+                            <ul class="show2">
+                                <li><a href="#">Element</a></li>
+                                <li><a href="#">Widgets</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i href="#" class="btn3">Charts
+                            <span class="fas fa-caret-down second"></span>
+                            </i>
+                            <ul class="show3">
+                                <li><a href="#">ChatJS</a></li>
+                                <li><a href="#">Apex Charts</a></li>
+                                <li><a href="#">chart sparkline</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="right_body">
+            <!-- first2colomn -->
+            <div class="first2colomn">
+                <div class="first_div">
+                    <div class="textposition">
+                        <h3>Total Income</h3>
+                        <div class="textwithjava1">
+                            <h1 id="n1">$ 579,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+                <div class="second_div">
+                    <div class="textposition">
+                        <h3>Total Expences</h3>
+                        <div class="textwithjava2">
+                            <h1 id="n2">$ 79,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secend2colomn">
+                <div class="third_div">
+                    <div class="textposition">
+                        <h3>Cash on Hand</h3>
+                        <div class="textwithjava3">
+                            <h1 id="n3">$ 92,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+                <div class="fourth_div">
+                    <div class="textposition">
+                        <h3>Net Profit Margin</h3>
+                        <div class="textwithjava4">
+                            <h1 id="n4">$ 179,000</h1>
+                        </div>
+                        <h5>Saved %25</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end2colomn">
+                <!--  chmp desig -->
+                <div class="fifth_div">
+                    <div class="charts">
+                        <div class="chart">
+                            <h1 id="text3">AP and AR Balance</h1>
+                            <h5>Avg $15,309</h5>
+                            <canvas id="lineChart" width="450" height="450"></canvas>
+                        </div>
+                        <div class="chart " id="doughnut-chart ">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Two Circle -->
+                <div class="sixth_div ">
+                    <div class="leftcircle ">
+                        <h3 class="text2 ">$ of Income Budget</h3>
+                        <div class="circle1 ">
+
+                            <div class="skill ">
+                                <div class="outer ">
+                                    <div class="inner ">
+                                        <div class="text ">
+                                            <div id="number">67%
+                                                <h3 id="textc1 ">Budget</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg " version="1.1 " width="160px " height="160px ">
+                                <defs>
+                                   <lineargradient id="GradientColor">
+                                    <stop offset="0% " stop-color="#6dd4b1" />
+                                    <stop offset="100% " stop-color="#4d73eb" />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80 " cy="80 " r="70 " stroke-linecap="round" id="circle1"/>
+                            </svg>
+                                <div class="textskils ">
+                                    <div class="testskills_left ">
+                                        <div class="imgcircle "><img src="logo/circle-solid.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth ">
+                                        <div class="imgcircle "><img src="logo/circle-solid-green.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">$131,430</h2>
+
+                                    </div>
+                                </div>
+                                <div class="line "></div>
+                                <div class="links "><a href="# ">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rithghcircle ">
+                        <h3 class="text2">$ of Income Budget</h3>
+                        <div class="circle2 ">
+
+
+                            <div class="skill1 ">
+                                <div class="outer1 ">
+                                    <div class="inner1 ">
+                                        <div class="text1">
+                                            <div id="number1">48%
+                                                <h3 id="textc2">Profit</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg " version="3.5 " width="160px " height="160px ">
+                                <defs>
+                                   <lineargradient id="GradientColor1">
+                                      <stop offset="0% " stop-color="#6dd4b1 " />
+                                      <stop offset="100% " stop-color="#4d73eb " />
+                                   </lineargradient>
+                                </defs>
+                                <circle cx="80 " cy="80 " r="70 " stroke-linecap="round" id="circle2"/>
+                            </svg>
+                                <div class="textskils ">
+                                    <div class="testskills_left ">
+                                        <div class="imgcircle "><img src="logo/circle-solid-green.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">-$118,570</h2>
+                                    </div>
+                                    <div class="textskils_rigth ">
+                                        <div class="imgcircle "><img src="logo/circle-solid.svg " alt=" " width="20px "></div>
+                                        <h2 class="prix ">$131,430</h2>
+                                    </div>
+                                </div>
+                                <div class="line "></div>
+                                <div class="links "><a href="# ">View Full Report</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js "></script>
+    <script src="chart1.js"></script>
+    <script src="circle.js"></script>
+    <script>
+        $('.btn').click(function() {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function() {
+            $('.sidebar ul .feat-show').toggleClass("show");
+            $('.sidebar ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function() {
+            $('.sidebar ul .serv-show').toggleClass("show1");
+            $('.sidebar ul .second').toggleClass("rotate");
+        });
+        $('.btn1').click(function() {
+            $('.sidebar ul .show01').toggleClass("show1");
+            $('.sidebar ul .second').toggleClass("rotate");
+        });
+        $('.btn2').click(function() {
+            $('.sidebar ul .show2').toggleClass("show1");
+            $('.sidebar ul .second').toggleClass("rotate");
+        });
+        $('.btn3').click(function() {
+            $('.sidebar ul .show3').toggleClass("show1");
+            $('.sidebar ul .second').toggleClass("rotate");
+        });
+        $('.btn4').click(function() {
+            $('.sidebar ul .show4').toggleClass("show1");
+            $('.sidebar ul .second').toggleClass("rotate");
+        });
+        $('.btn5').click(function() {
+            $('.contact ul .show5').toggleClass("show5");
+            $('.contact ul .second').toggleClass("rotate");
+
+        });
+
+        $('.navs ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+</body>
+
+
+</html>
+
+
+
+
+<!-- 
+
+        color site:
+
+        /* CSV */
+7dc6d4,f4fafa,9e72cc,4473e3,abbfd1,847774,ccd8de,cab3d9,eac8b9
+
+/* Array */
+["7dc6d4 ","f4fafa ","9e72cc ","4473e3 ","abbfd1 ","847774 ","ccd8de ","cab3d9 ","eac8b9 "]
+
+
+     -->
