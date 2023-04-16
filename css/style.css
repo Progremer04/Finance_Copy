@@ -649,6 +649,22 @@ write it reusultate in
         display: block;
     }
     
+    .nays ul .show01.show1 {
+        display: block;
+    }
+    
+    .nays ul .show2.show1 {
+        display: block;
+    }
+    
+    .nays ul .show3.show1 {
+        display: block;
+    }
+    
+    .nays ul .show4.show1 {
+        display: block;
+    }
+    
     .nays ul ul li {
         line-height: 42px;
         border-top: none;
